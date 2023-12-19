@@ -3,7 +3,9 @@ import globalStore from "shell/globalStore";
 import dayjs from 'dayjs';
 const MyAccountComponent = () => {
   const accountInfo = (globalStore((state) => state.accountInfo));
-  
+  const state = globalStore((state) => state);
+
+  console.log("Home Microfrontend - global state:", state);
   return (
     <Card className="w-[30rem]">
       <CardHeader className="flex gap-3">

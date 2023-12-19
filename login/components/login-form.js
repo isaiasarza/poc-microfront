@@ -20,6 +20,10 @@ const LoginForm = () => {
 
   const setNewServiceState = globalStore((state) => state.setNewServiceState);
 
+  const state = globalStore((state) => state);
+
+  console.log("Login Microfrontend - global state:", state);
+
   const formik = useFormik({
     initialValues: {
       email: "mestebanquito@gmail.com",
