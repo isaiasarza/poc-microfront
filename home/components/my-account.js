@@ -1,11 +1,10 @@
 import { Card, CardBody, CardHeader, Divider, User } from "@nextui-org/react";
 import globalStore from "shell/globalStore";
-import dayjs from 'dayjs';
+import dayjs from "dayjs";
 const MyAccountComponent = () => {
-  const accountInfo = (globalStore((state) => state.accountInfo));
-  const state = globalStore((state) => state);
+  const accountInfo = globalStore((state) => state.accountInfo);
+  
 
-  console.log("Home Microfrontend - global state:", state);
   return (
     <Card className="w-[30rem]">
       <CardHeader className="flex gap-3">
@@ -18,7 +17,9 @@ const MyAccountComponent = () => {
         />
         <div className="flex flex-col">
           <p className="text-md">Mi Cuenta</p>
-          <p className="text-small text-default-500">{accountInfo?.user?.name}</p>
+          <p className="text-small text-default-500">
+            {accountInfo?.user?.name}
+          </p>
         </div>
       </CardHeader>
       <Divider />

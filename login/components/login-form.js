@@ -10,6 +10,7 @@ import {
   Input,
 } from "@nextui-org/react";
 import { useFormik } from "formik";
+import { useEffect } from "react";
 import { toast } from "react-toastify";
 import globalStore from "shell/globalStore";
 
@@ -20,9 +21,7 @@ const LoginForm = () => {
 
   const setNewServiceState = globalStore((state) => state.setNewServiceState);
 
-  const state = globalStore((state) => state);
-
-  console.log("Login Microfrontend - global state:", state);
+  
 
   const formik = useFormik({
     initialValues: {
@@ -35,7 +34,10 @@ const LoginForm = () => {
           email: values.email,
           password: values.password,
         });
-        console.log("🚀 ~ file: login-form.js:28 ~ LoginForm ~ user:", accountInfo);
+        console.log(
+          "🚀 ~ file: login-form.js:28 ~ LoginForm ~ user:",
+          accountInfo
+        );
 
         setAccountInfo(accountInfo);
 
