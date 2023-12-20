@@ -1,4 +1,5 @@
 import MyAccountComponent from "@/components/my-account";
+import { useEffect } from "react";
 import globalStore from "shell/globalStore";
 
 const HomePage = () => {
