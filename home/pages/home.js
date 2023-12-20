@@ -1,5 +1,5 @@
 import MyAccountComponent from "@/components/my-account";
-import { NextUIProvider } from "@nextui-org/react";
+import globalStore from "shell/globalStore";
 
 const HomePage = () => {
   const state = globalStore((state) => state);

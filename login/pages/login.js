@@ -1,5 +1,5 @@
 import LoginForm from "@/components/login-form";
-
+import globalStore from "shell/globalStore";
 const LoginPage = ({ loaded }) => {
   const state = globalStore((state) => state);
 
