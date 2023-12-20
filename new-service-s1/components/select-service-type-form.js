@@ -93,17 +93,9 @@ const SelectServiceTypeFormComponent = () => {
                 placeholder="Seleccione el subtipo de servicio"
                 className="max-w"
                 onChange={async ({ target }) => {
-                  console.log(
-                    "🚀 ~ file: select-service-type.js:86 ~ SelectServiceTypeFormComponent ~ value:",
-                    target.value
-                  );
                   formik.setFieldValue("subType", target.value);
                   const { price } = getSubtype(target.value);
                   formik.setFieldValue("price", price);
-                  console.log(
-                    "🚀 ~ file: select-service-type.js:92 ~ SelectServiceTypeFormComponent ~ price:",
-                    price
-                  );
                 }}
                 value={formik.values.subType}
               >

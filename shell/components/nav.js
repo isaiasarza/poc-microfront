@@ -9,7 +9,6 @@ import {
   NavbarItem,
 } from "@nextui-org/react";
 import { useRouter } from "next/navigation";
-console.log("fromHome", __webpack_share_scopes__, Link);
 
 const Nav = ({ isLoggedIn }) => {
  const router = useRouter();

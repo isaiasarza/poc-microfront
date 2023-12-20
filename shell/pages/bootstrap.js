@@ -20,7 +20,6 @@ const Index = () => {
       const { currentUser } = state;
 
       resolve(currentUser);
-      console.log("🚀 ~ file: index.js:14 ~ unsub ~ currentUser:", currentUser);
     });
   };
 

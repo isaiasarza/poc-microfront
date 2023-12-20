@@ -14,7 +14,6 @@ function MyApp({ Component, pageProps }) {
     const unsub = globalStore.subscribe((state) => {
       const { accountInfo } = state;
       const _loggedIn = (!!accountInfo?.user);
-      console.log("🚀 ~ file: _app.js:16 ~ unsub ~ _loggedIn:", _loggedIn);
       setLoggedIn(_loggedIn);
     });
   };

@@ -34,10 +34,6 @@ const LoginForm = () => {
           email: values.email,
           password: values.password,
         });
-        console.log(
-          "🚀 ~ file: login-form.js:28 ~ LoginForm ~ user:",
-          accountInfo
-        );
 
         setAccountInfo(accountInfo);
 
